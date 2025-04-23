@@ -1,0 +1,14 @@
+#Start recording tcl command: 3/26/2025 11:58:46
+#Project Location: C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2; Project name: TA_Driver
+prj_project open "C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/TA_Driver.ldf"
+pgr_project close
+prj_run Export -impl impl1 -task Jedecgen -forceAll
+prj_run Export -impl impl1 -task Jedecgen -forceAll
+prj_run Export -impl impl1 -task Jedecgen -forceAll
+prj_run Export -impl impl1 -task Jedecgen -forceAll
+prj_run Export -impl impl1 -task Jedecgen -forceAll
+prj_run Export -impl impl1 -task Jedecgen -forceAll
+prj_run Export -impl impl1 -task Jedecgen -forceAll
+prj_project save
+prj_project close
+#Stop recording: 3/26/2025 12:46:11

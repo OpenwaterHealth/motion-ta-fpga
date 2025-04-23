@@ -1,0 +1,310 @@
+# Reading pref.tcl
+# do {C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/TestBench/TestBench.mdo}
+# Loading project TestBench
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2023.3 Compiler 2023.07 Jul 18 2023
+# Start time: 08:23:16 on Apr 01,2025
+# vlog -reportprogress 300 "+incdir+C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src" -work work C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src/adc_control.v 
+# -- Compiling module adc_control
+# 
+# Top level modules:
+# 	adc_control
+# End time: 08:23:16 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2023.3 Compiler 2023.07 Jul 18 2023
+# Start time: 08:23:16 on Apr 01,2025
+# vlog -reportprogress 300 "+incdir+C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src" -work work C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src/driver_control.v 
+# -- Compiling module driver_control
+# 
+# Top level modules:
+# 	driver_control
+# End time: 08:23:16 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2023.3 Compiler 2023.07 Jul 18 2023
+# Start time: 08:23:16 on Apr 01,2025
+# vlog -reportprogress 300 "+incdir+C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src" -work work C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src/registers.v 
+# -- Compiling module registers
+# 
+# Top level modules:
+# 	registers
+# End time: 08:23:16 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2023.3 Compiler 2023.07 Jul 18 2023
+# Start time: 08:23:16 on Apr 01,2025
+# vlog -reportprogress 300 "+incdir+C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src" -work work C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src/i2cslave_controller.v 
+# -- Compiling module i2cslave_controller
+# 
+# Top level modules:
+# 	i2cslave_controller
+# End time: 08:23:17 on Apr 01,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2023.3 Compiler 2023.07 Jul 18 2023
+# Start time: 08:23:17 on Apr 01,2025
+# vlog -reportprogress 300 "+incdir+C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src" -work work C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src/filter.v 
+# -- Compiling module filter
+# 
+# Top level modules:
+# 	filter
+# End time: 08:23:17 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2023.3 Compiler 2023.07 Jul 18 2023
+# Start time: 08:23:17 on Apr 01,2025
+# vlog -reportprogress 300 "+incdir+C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src" -work work C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src/i2cslave_controller_top.v 
+# -- Compiling module i2cslave_controller_top
+# 
+# Top level modules:
+# 	i2cslave_controller_top
+# End time: 08:23:17 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2023.3 Compiler 2023.07 Jul 18 2023
+# Start time: 08:23:17 on Apr 01,2025
+# vlog -reportprogress 300 "+incdir+C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src" -work work C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src/i2c_slave_top.v 
+# -- Compiling module i2c_slave_top
+# 
+# Top level modules:
+# 	i2c_slave_top
+# End time: 08:23:17 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2023.3 Compiler 2023.07 Jul 18 2023
+# Start time: 08:23:17 on Apr 01,2025
+# vlog -reportprogress 300 "+incdir+C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src" -work work C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src/heart_beat.v 
+# -- Compiling module heart_beat
+# 
+# Top level modules:
+# 	heart_beat
+# End time: 08:23:17 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2023.3 Compiler 2023.07 Jul 18 2023
+# Start time: 08:23:17 on Apr 01,2025
+# vlog -reportprogress 300 "+incdir+C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src" -work work C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src/reset_generator.v 
+# -- Compiling module reset_generator
+# 
+# Top level modules:
+# 	reset_generator
+# End time: 08:23:17 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2023.3 Compiler 2023.07 Jul 18 2023
+# Start time: 08:23:17 on Apr 01,2025
+# vlog -reportprogress 300 "+incdir+C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src" -work work C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src/top.v 
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 08:23:17 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2023.3 Compiler 2023.07 Jul 18 2023
+# Start time: 08:23:17 on Apr 01,2025
+# vlog -reportprogress 300 "+incdir+C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/TestBench" -work work C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/TestBench/i2c_master.v 
+# -- Compiling module i2c_master
+# 
+# Top level modules:
+# 	i2c_master
+# End time: 08:23:17 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2023.3 Compiler 2023.07 Jul 18 2023
+# Start time: 08:23:17 on Apr 01,2025
+# vlog -reportprogress 300 "+incdir+C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/TestBench" -work work C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/TestBench/top_tb.v 
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# End time: 08:23:17 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2023.3 Compiler 2023.07 Jul 18 2023
+# Start time: 08:23:17 on Apr 01,2025
+# vlog -reportprogress 300 "+incdir+C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/TestBench" -work work C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/TestBench/tb_defines.v 
+# End time: 08:23:17 on Apr 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -L work -L pmi_work -L ovi_machxo2 top_tb 
+# Start time: 08:23:17 on Apr 01,2025
+# //  ModelSim - Lattice FPGA Edition 2023.3 Jul 18 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim - Lattice FPGA Edition and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading work.top_tb
+# Loading work.i2c_master
+# Loading work.top
+# Loading work.reset_generator
+# Loading work.heart_beat
+# Loading work.i2c_slave_top
+# Loading work.i2cslave_controller_top
+# Loading work.filter
+# Loading work.i2cslave_controller
+# Loading work.registers
+# Loading work.driver_control
+# Loading work.adc_control
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'TA_pos_pwr_good'. The port definition is at: C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src/top.v(25).
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/top File: C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/TestBench/top_tb.v Line: 107
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'TA_neg_pwr_good'. The port definition is at: C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src/top.v(26).
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/top File: C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/TestBench/top_tb.v Line: 107
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'TA_EE_shutdown'. The port definition is at: C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src/top.v(29).
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/top File: C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/TestBench/top_tb.v Line: 107
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'TA_OPT_shutdown'. The port definition is at: C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src/top.v(30).
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/top File: C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/TestBench/top_tb.v Line: 107
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'adc_sdo'. The port definition is at: C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src/top.v(40).
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/top File: C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/TestBench/top_tb.v Line: 107
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'cw_compared'. The port definition is at: C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src/top.v(50).
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/top File: C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/TestBench/top_tb.v Line: 107
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'pwm_compared'. The port definition is at: C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src/top.v(51).
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/top File: C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/TestBench/top_tb.v Line: 107
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'monitor_status'. The port definition is at: C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src/i2c_slave_top.v(28).
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/top/i2c_slave_top File: C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src/top.v Line: 163
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'i2cslave_controller_u1'.  Expected 26, found 18.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/top/i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1 File: C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src/i2cslave_controller_top.v Line: 124
+# ** Warning: (vsim-3722) C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src/i2cslave_controller_top.v(124): [TFMPC] - Missing connection for port 'o_intr'.
+# ** Warning: (vsim-3722) C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src/i2cslave_controller_top.v(124): [TFMPC] - Missing connection for port 'o_rx_status'.
+# ** Warning: (vsim-3722) C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src/i2cslave_controller_top.v(124): [TFMPC] - Missing connection for port 'o_data_request'.
+# ** Warning: (vsim-3722) C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src/i2cslave_controller_top.v(124): [TFMPC] - Missing connection for port 'o_init_done'.
+# ** Warning: (vsim-3722) C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src/i2cslave_controller_top.v(124): [TFMPC] - Missing connection for port 'o_rd_done'.
+# ** Warning: (vsim-3722) C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src/i2cslave_controller_top.v(124): [TFMPC] - Missing connection for port 'o_timeout_err'.
+# ** Warning: (vsim-3722) C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src/i2cslave_controller_top.v(124): [TFMPC] - Missing connection for port 'o_init_intr'.
+# ** Warning: (vsim-3722) C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src/i2cslave_controller_top.v(124): [TFMPC] - Missing connection for port 'o_timeout_intr'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'monitor_status'. The port definition is at: C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src/adc_control.v(38).
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/top/adc_control File: C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/src/top.v Line: 211
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Henry Tang  Hostname: DESKTOP-HKS9BFC  ProcessID: 38096
+#           Attempting to use alternate WLF file "./wlftgz1sgf".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftgz1sgf
+run -all
+#               203002: The I2C Master Has Generated a Start Condition.
+#  
+#               281502: The I2C Master Sends the 7-bit I2C Address 0x41 (0b1000001)
+#  
+#               374752: The I2C Master Sends the I2C Register Byte 0x00
+#  
+#               470502: I2C Master Write Data = 0x40
+#  
+#               565002: I2C Master Write Data = 0x07
+#  
+#               659502: I2C Master Write Data = 0x00
+#  
+#               685552: The I2C Master Has Generated a Stop Condition
+#              --------------------------------------------------------
+#  
+#  
+#               796002: The I2C Master Has Generated a Start Condition.
+#  
+#               874502: The I2C Master Sends the 7-bit I2C Address 0x41 (0b1000001)
+#  
+#               967752: The I2C Master Sends the I2C Register Byte 0x03
+#  
+#              1063502: I2C Master Write Data = 0x00
+#  
+#              1158002: I2C Master Write Data = 0x10
+#  
+#              1252502: I2C Master Write Data = 0x01
+#  
+#              1278552: The I2C Master Has Generated a Stop Condition
+#              --------------------------------------------------------
+#  
+#  
+#              1389002: The I2C Master Has Generated a Start Condition.
+#  
+#              1467502: The I2C Master Sends the 7-bit I2C Address 0x41 (0b1000001)
+#  
+#              1560752: The I2C Master Sends the I2C Register Byte 0x06
+#  
+#              1656502: I2C Master Write Data = 0x88
+#  
+#              1751002: I2C Master Write Data = 0x99
+#  
+#              1777052: The I2C Master Has Generated a Stop Condition
+#              --------------------------------------------------------
+#  
+#  
+#              1887502: The I2C Master Has Generated a Start Condition.
+#  
+#              1966002: The I2C Master Sends the 7-bit I2C Address 0x41 (0b1000001)
+#  
+#              2059252: The I2C Master Sends the I2C Register Byte 0x22
+#  
+#              2155002: I2C Master Write Data = 0x01
+#  
+#              2181052: The I2C Master Has Generated a Stop Condition
+#              --------------------------------------------------------
+#  
+#  
+#              2291502: The I2C Master Has Generated a Start Condition.
+#  
+#              2370002: The I2C Master Sends the 7-bit I2C Address 0x41 (0b1000001)
+#  
+#              2463252: The I2C Master Sends the I2C Register Byte 0x20
+#  
+#              2559002: I2C Master Write Data = 0x80
+#  
+#              2585052: The I2C Master Has Generated a Stop Condition
+#              --------------------------------------------------------
+#  
+#  
+#              2695502: The I2C Master Has Generated a Start Condition.
+#  
+#              2774002: The I2C Master Sends the 7-bit I2C Address 0x41 (0b1000001)
+#  
+#              2867252: The I2C Master Sends the I2C Register Byte 0x0e
+#  
+#              2963002: I2C Master Write Data = 0x01
+#  
+#              2989052: The I2C Master Has Generated a Stop Condition
+#              --------------------------------------------------------
+#  
+#  
+#              3099502: The I2C Master Has Generated a Start Condition.
+#  
+#              3178002: The I2C Master Sends the 7-bit I2C Address 0x41 (0b1000001)
+#  
+#              3271252: The I2C Master Sends the I2C Register Byte 0x00
+#  
+#              3298502: The I2C Master Has Generated a Repeat Start Condition.
+#  
+#              3390502: The I2C Master Sends the 7-bit I2C Address 0x41 (0b1000001)
+#  
+#              3474502: I2C Master Read Data = 0x40
+#  
+#              3569002: I2C Master Read Data = 0x07
+#  
+#              3663502: I2C Master Read Data = 0x00
+#  
+#              3758002: I2C Master Read Data = 0x00
+#  
+#              3852502: I2C Master Read Data = 0x10
+#  
+#              3947002: I2C Master Read Data = 0x01
+#  
+#              3970552: The I2C Master Has Generated a Stop Condition
+#              --------------------------------------------------------
+#  
+#  
+#              4081002: The I2C Master Has Generated a Start Condition.
+#  
+#              4159502: The I2C Master Sends the 7-bit I2C Address 0x41 (0b1000001)
+#  
+#              4252752: The I2C Master Sends the I2C Register Byte 0x02
+#  
+#              4280052: The I2C Master Has Generated a Stop Condition
+#              --------------------------------------------------------
+#  
+#  
+#              4390502: The I2C Master Has Generated a Start Condition.
+#  
+#              4482002: The I2C Master Sends the 7-bit I2C Address 0x41 (0b1000001)
+#  
+#              4566002: I2C Master Read Data = 0x00
+#  
+#              4589552: The I2C Master Has Generated a Stop Condition
+#              --------------------------------------------------------
+#  
+#  
+# ** Note: $stop    : C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/TestBench/i2c_master.v(249)
+#    Time: 4689558 ns  Iteration: 0  Instance: /top_tb/master_uut
+# Break in Module i2c_master at C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_2/TestBench/i2c_master.v line 249
+run -all

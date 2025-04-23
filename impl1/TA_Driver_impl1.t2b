@@ -1,0 +1,5 @@
+
+
+-g RamCfg:Reset
+
+-path "C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_3"  

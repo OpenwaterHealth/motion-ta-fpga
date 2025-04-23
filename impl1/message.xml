@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="LSE_Compile">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901372</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_a/impl1/source/i2c.v(71): </Dynamic>
+            <Dynamic>lsb_bit</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_a/impl1/source/i2c.v</Navigation>
+            <Navigation>71</Navigation>
+        </Message>
+        <Message>
+            <ID>35901372</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_a/impl1/source/i2c.v(72): </Dynamic>
+            <Dynamic>ack_bit</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_a/impl1/source/i2c.v</Navigation>
+            <Navigation>72</Navigation>
+        </Message>
+        <Message>
+            <ID>35901372</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_a/impl1/source/i2c.v(75): </Dynamic>
+            <Dynamic>write_strobe</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_a/impl1/source/i2c.v</Navigation>
+            <Navigation>75</Navigation>
+        </Message>
+        <Message>
+            <ID>35901137</ID>
+            <Severity>Error</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_a/impl1/source/master.v(6): </Dynamic>
+            <Dynamic>RST</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_a/impl1/source/master.v</Navigation>
+            <Navigation>6</Navigation>
+        </Message>
+    </Task>
+    <Task name="MapVerilogSimFile">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Map">
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>trigger</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>trigger</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901372</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/driver_control.v(75): </Dynamic>
+            <Dynamic>force_trigger</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/driver_control.v</Navigation>
+            <Navigation>75</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/testbench/top_tb.v(2): </Dynamic>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/testbench/tb_defines.v</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/testbench/top_tb.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/testbench/i2c_master.v(51): </Dynamic>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/testbench/tb_defines.v</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/testbench/i2c_master.v</Navigation>
+            <Navigation>51</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/top.v(20): </Dynamic>
+            <Dynamic>top</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/top.v</Navigation>
+            <Navigation>20</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/reset_generator.v(21): </Dynamic>
+            <Dynamic>reset_generator</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/reset_generator.v</Navigation>
+            <Navigation>21</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/heart_beat.v(21): </Dynamic>
+            <Dynamic>heart_beat</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/heart_beat.v</Navigation>
+            <Navigation>21</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/heart_beat.v(40): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>16</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/heart_beat.v</Navigation>
+            <Navigation>40</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/heart_beat.v(49): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>16</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/heart_beat.v</Navigation>
+            <Navigation>49</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2c_slave_top.v(20): </Dynamic>
+            <Dynamic>i2c_slave_top</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2c_slave_top.v</Navigation>
+            <Navigation>20</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller_top.v(53): </Dynamic>
+            <Dynamic>i2cslave_controller_top</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller_top.v</Navigation>
+            <Navigation>53</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/filter.v(39): </Dynamic>
+            <Dynamic>filter</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/filter.v</Navigation>
+            <Navigation>39</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v(54): </Dynamic>
+            <Dynamic>i2cslave_controller</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v</Navigation>
+            <Navigation>54</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v(408): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v</Navigation>
+            <Navigation>408</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v(433): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v</Navigation>
+            <Navigation>433</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v(454): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v</Navigation>
+            <Navigation>454</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v(495): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v</Navigation>
+            <Navigation>495</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v(545): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v</Navigation>
+            <Navigation>545</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v(582): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v</Navigation>
+            <Navigation>582</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller_top.v(180): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller_top.v</Navigation>
+            <Navigation>180</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/registers.v(3): </Dynamic>
+            <Dynamic>registers</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/registers.v</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/registers.v(86): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/registers.v</Navigation>
+            <Navigation>86</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/registers.v(208): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>8</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/registers.v</Navigation>
+            <Navigation>208</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/registers.v(213): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>8</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/registers.v</Navigation>
+            <Navigation>213</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/registers.v(230): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>12</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/registers.v</Navigation>
+            <Navigation>230</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/registers.v(255): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/registers.v</Navigation>
+            <Navigation>255</Navigation>
+        </Message>
+        <Message>
+            <ID>35901330</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/top.v(173): </Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>8</Dynamic>
+            <Dynamic>monitor_status</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/top.v</Navigation>
+            <Navigation>173</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/driver_control.v(3): </Dynamic>
+            <Dynamic>driver_control</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/driver_control.v</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/driver_control.v(94): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>16</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/driver_control.v</Navigation>
+            <Navigation>94</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/driver_control.v(128): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>24</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/driver_control.v</Navigation>
+            <Navigation>128</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/driver_control.v(152): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>8</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/driver_control.v</Navigation>
+            <Navigation>152</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/driver_control.v(182): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>24</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/driver_control.v</Navigation>
+            <Navigation>182</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/driver_control.v(191): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>24</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/driver_control.v</Navigation>
+            <Navigation>191</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/driver_control.v(249): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>16</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/driver_control.v</Navigation>
+            <Navigation>249</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/driver_control.v(286): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>8</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/driver_control.v</Navigation>
+            <Navigation>286</Navigation>
+        </Message>
+        <Message>
+            <ID>35901330</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/top.v(194): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>trigger</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/top.v</Navigation>
+            <Navigation>194</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/adc_control.v(21): </Dynamic>
+            <Dynamic>adc_control</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/adc_control.v</Navigation>
+            <Navigation>21</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/adc_control.v(91): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>8</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/adc_control.v</Navigation>
+            <Navigation>91</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/adc_control.v(104): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/adc_control.v</Navigation>
+            <Navigation>104</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/adc_control.v(129): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>8</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/adc_control.v</Navigation>
+            <Navigation>129</Navigation>
+        </Message>
+        <Message>
+            <ID>35901330</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/top.v(233): </Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>8</Dynamic>
+            <Dynamic>monitor_status</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/top.v</Navigation>
+            <Navigation>233</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/top.v(87): </Dynamic>
+            <Dynamic>status[0]</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/top.v</Navigation>
+            <Navigation>87</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/top.v(224): </Dynamic>
+            <Dynamic>adc_status_clear</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/top.v</Navigation>
+            <Navigation>224</Navigation>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>trigger</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>laser_disable_led_n</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>cw_over_current_led_n</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>pwm_over_current_led_n</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>cw_active_led_n</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>modulate_active_led_n</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v(313): </Dynamic>
+            <Dynamic>\i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1/addr_10bit_en_reg_i_754</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v</Navigation>
+            <Navigation>313</Navigation>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v(323): </Dynamic>
+            <Dynamic>\i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1/hs_mode_reg_i_755</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v</Navigation>
+            <Navigation>323</Navigation>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v(735): </Dynamic>
+            <Dynamic>\i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1/addr_ack2_i_773</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v</Navigation>
+            <Navigation>735</Navigation>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v(745): </Dynamic>
+            <Dynamic>\i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1/master_code_not_ack_reg_i_776</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v</Navigation>
+            <Navigation>745</Navigation>
+        </Message>
+        <Message>
+            <ID>35001774</ID>
+            <Severity>Info</Severity>
+            <Dynamic>\i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1/next_state_i</Dynamic>
+            <Dynamic>one-hot</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>3</Dynamic>
+            <Dynamic>\i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1/next_state_i_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>7</Dynamic>
+            <Dynamic>\i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1/next_state_i_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>2</Dynamic>
+            <Dynamic>\driver_control/cstate</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>0</Dynamic>
+            <Dynamic>\driver_control/pulse_state</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>trigger</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/driver_control.v(338): </Dynamic>
+            <Dynamic>\driver_control/data_i0_i0</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/driver_control.v</Navigation>
+            <Navigation>338</Navigation>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v(618): </Dynamic>
+            <Dynamic>\i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1/next_state_i_FSM_i2</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v</Navigation>
+            <Navigation>618</Navigation>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/driver_control.v(293): </Dynamic>
+            <Dynamic>\driver_control/data_temp_i0_i0</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/driver_control.v</Navigation>
+            <Navigation>293</Navigation>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v(1087): </Dynamic>
+            <Dynamic>\i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1/timeout_state_i__i1</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v</Navigation>
+            <Navigation>1087</Navigation>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v(1097): </Dynamic>
+            <Dynamic>\i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1/reset_fsm_i_804</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v</Navigation>
+            <Navigation>1097</Navigation>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v(1074): </Dynamic>
+            <Dynamic>\i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1/timeout_counter_i_1184__i0</Dynamic>
+            <Navigation>c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v</Navigation>
+            <Navigation>1074</Navigation>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>trigger</Dynamic>
+            <Navigation>trigger</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>trigger</Dynamic>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>2</Dynamic>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>61001101</ID>
+            <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>61061008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>clk_25mhz_c</Dynamic>
+            <Dynamic>Primary</Dynamic>
+            <Dynamic>clk_25mhz</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>Primary</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=i2c_slave_top/addr_i_7__N_594 loads=2 clock_loads=1
+   Signal=i2c_slave_top/addr_i_7__N_590 loads=2 clock_loads=1
+   Signal=i2c_slave_top/addr_i_7__N_591 loads=2 clock_loads=1
+   Signal=i2c_slave_top/addr_i_7__N_592 loads=2 clock_loads=1
+   Signal=i2c_slave_top/addr_i_7__N_593 loads=2 clock_loads=1
+   Signal=i2c_   ....   _loads=1
+   Signal=i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1/sda_reg loads=12 clock_loads=2
+   Signal=reset_generator/clk_d2 loads=4 clock_loads=3</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=i2c_slave_top/addr_i_7__N_594 loads=2 clock_loads=1
+   Signal=i2c_slave_top/addr_i_7__N_590 loads=2 clock_loads=1
+   Signal=i2c_slave_top/addr_i_7__N_591 loads=2 clock_loads=1
+   Signal=i2c_slave_top/addr_i_7__N_592 loads=2 clock_loads=1
+   Signal=i2c_slave_top/addr_i_7__N_593 loads=2 clock_loads=1
+   Signal=i2c_   ....   _loads=1
+   Signal=i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1/sda_reg loads=12 clock_loads=2
+   Signal=reset_generator/clk_d2 loads=4 clock_loads=3</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Jedecgen">
+        <Message>
+            <ID>1009992</ID>
+            <Severity>Info</Severity>
+            <Dynamic> SW_XO3D_SECURITY_ENCRYPTION *NOT* controlled by xo2c00.acd ###</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009992</ID>
+            <Severity>Info</Severity>
+            <Dynamic> SW_XO3D_SECURITY_ENCRYPTION license_securityIP OK</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

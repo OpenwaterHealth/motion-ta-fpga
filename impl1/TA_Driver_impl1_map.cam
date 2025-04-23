@@ -1,0 +1,191 @@
+[ START MERGED ]
+driver_control/clk_count_3__N_891 driver_control/clk_count[3]
+clk_N_1249 clk_25mhz_c
+n517 static_control_7
+driver_control/n4668 driver_control/ss_temp
+i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1/sda_reg__inv i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1/sda_reg
+reset_generator/rstn_N_5 rstn_c
+adc_control/clk_25mhz_c_enable_4 adc_control/state_1
+[ END MERGED ]
+[ START CLIPPED ]
+heart_beat/count_1174_1298_add_4_1/S0
+heart_beat/count_1174_1298_add_4_1/CI
+heart_beat/prescale_1175_add_4_1/S0
+heart_beat/prescale_1175_add_4_1/CI
+heart_beat/count_1174_1298_add_4_9/S1
+heart_beat/count_1174_1298_add_4_9/CO
+heart_beat/prescale_1175_add_4_17/S1
+heart_beat/prescale_1175_add_4_17/CO
+adc_control/convert_count_1181_add_4_1/S0
+adc_control/convert_count_1181_add_4_1/CI
+adc_control/convert_count_1181_add_4_9/S1
+adc_control/convert_count_1181_add_4_9/CO
+adc_control/sub_13_add_2_1/S0
+adc_control/sub_13_add_2_1/CI
+adc_control/sub_13_add_2_9/S1
+adc_control/sub_13_add_2_9/CO
+sub_879_add_2_23/S1
+sub_879_add_2_23/S0
+sub_879_add_2_25/S0
+sub_879_add_2_25/CO
+i2c_slave_top/registers/add_229_1/S0
+i2c_slave_top/registers/add_229_1/CI
+i2c_slave_top/registers/add_229_9/S1
+i2c_slave_top/registers/add_229_9/CO
+driver_control/sub_876_add_2_1/S1
+driver_control/sub_876_add_2_1/S0
+driver_control/sub_876_add_2_1/CI
+driver_control/pulse_count_1178_add_4_25/S1
+driver_control/pulse_count_1178_add_4_25/CO
+driver_control/sub_876_add_2_3/S1
+driver_control/sub_876_add_2_3/S0
+driver_control/sub_10_add_2_1/S0
+driver_control/sub_10_add_2_1/CI
+driver_control/sub_876_add_2_5/S1
+driver_control/sub_876_add_2_5/S0
+driver_control/sub_876_add_2_7/S1
+driver_control/sub_876_add_2_7/S0
+driver_control/sub_876_add_2_9/S1
+driver_control/sub_876_add_2_9/S0
+driver_control/sub_876_add_2_11/S1
+driver_control/sub_876_add_2_11/S0
+driver_control/sub_876_add_2_13/S1
+driver_control/sub_876_add_2_13/S0
+driver_control/sub_876_add_2_15/S1
+driver_control/sub_876_add_2_15/S0
+driver_control/sub_10_add_2_25/S1
+driver_control/sub_10_add_2_25/CO
+driver_control/sub_9_add_2_1/S0
+driver_control/sub_9_add_2_1/CI
+driver_control/force_trigger_count_1176_add_4_25/S1
+driver_control/force_trigger_count_1176_add_4_25/CO
+driver_control/sub_876_add_2_17/S1
+driver_control/sub_876_add_2_17/S0
+driver_control/sub_876_add_2_19/S1
+driver_control/sub_876_add_2_19/S0
+driver_control/trigger_count_1177_add_4_1/S0
+driver_control/trigger_count_1177_add_4_1/CI
+driver_control/sub_876_add_2_21/S1
+driver_control/sub_876_add_2_21/S0
+driver_control/sub_876_add_2_23/S1
+driver_control/sub_876_add_2_23/S0
+driver_control/sub_876_add_2_25/S0
+driver_control/sub_876_add_2_25/CO
+driver_control/trigger_count_1177_add_4_9/S1
+driver_control/trigger_count_1177_add_4_9/CO
+driver_control/sub_12_add_2_1/S0
+driver_control/sub_12_add_2_1/CI
+driver_control/add_539_1/S0
+driver_control/add_539_1/CI
+driver_control/sub_12_add_2_9/S1
+driver_control/sub_12_add_2_9/CO
+driver_control/sub_9_add_2_25/S1
+driver_control/sub_9_add_2_25/CO
+driver_control/clk_count_1179_1293_add_4_1/S0
+driver_control/clk_count_1179_1293_add_4_1/CI
+driver_control/clk_count_1179_1293_add_4_5/S1
+driver_control/clk_count_1179_1293_add_4_5/CO
+driver_control/add_539_17/S1
+driver_control/add_539_17/CO
+driver_control/pulse_count_1178_add_4_1/S0
+driver_control/pulse_count_1178_add_4_1/CI
+driver_control/force_trigger_count_1176_add_4_1/S0
+driver_control/force_trigger_count_1176_add_4_1/CI
+sub_877_add_2_1/S1
+sub_877_add_2_1/S0
+sub_877_add_2_1/CI
+sub_877_add_2_3/S1
+sub_877_add_2_3/S0
+sub_877_add_2_5/S1
+sub_877_add_2_5/S0
+sub_877_add_2_7/S1
+sub_877_add_2_7/S0
+sub_877_add_2_9/S1
+sub_877_add_2_9/S0
+sub_877_add_2_11/S1
+sub_877_add_2_11/S0
+sub_877_add_2_13/S1
+sub_877_add_2_13/S0
+sub_877_add_2_15/S1
+sub_877_add_2_15/S0
+sub_877_add_2_17/S1
+sub_877_add_2_17/S0
+sub_877_add_2_19/S1
+sub_877_add_2_19/S0
+sub_877_add_2_21/S1
+sub_877_add_2_21/S0
+sub_877_add_2_23/S1
+sub_877_add_2_23/S0
+sub_877_add_2_25/S0
+sub_877_add_2_25/CO
+sub_879_add_2_1/S1
+sub_879_add_2_1/S0
+sub_879_add_2_1/CI
+sub_879_add_2_3/S1
+sub_879_add_2_3/S0
+sub_879_add_2_5/S1
+sub_879_add_2_5/S0
+sub_879_add_2_7/S1
+sub_879_add_2_7/S0
+sub_879_add_2_9/S1
+sub_879_add_2_9/S0
+sub_879_add_2_11/S1
+sub_879_add_2_11/S0
+sub_879_add_2_13/S1
+sub_879_add_2_13/S0
+sub_879_add_2_15/S1
+sub_879_add_2_15/S0
+sub_879_add_2_17/S1
+sub_879_add_2_17/S0
+sub_879_add_2_19/S1
+sub_879_add_2_19/S0
+sub_879_add_2_21/S1
+sub_879_add_2_21/S0
+[ END CLIPPED ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.13.0.56.2 -- WARNING: Map write only section -- Mon Apr 14 10:52:20 2025
+
+SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
+LOCATE COMP "sda" SITE "58" ;
+LOCATE COMP "scl" SITE "57" ;
+LOCATE COMP "TA_laser_disable" SITE "88" ;
+LOCATE COMP "laser_disable_led_n" SITE "12" ;
+LOCATE COMP "adc_sck" SITE "81" ;
+LOCATE COMP "ldac_n" SITE "66" ;
+LOCATE COMP "ss" SITE "68" ;
+LOCATE COMP "mosi" SITE "69" ;
+LOCATE COMP "sck" SITE "67" ;
+LOCATE COMP "adc_convert" SITE "71" ;
+LOCATE COMP "temp_scl" SITE "60" ;
+LOCATE COMP "temp_sda" SITE "61" ;
+LOCATE COMP "cw_over_current_led_n" SITE "64" ;
+LOCATE COMP "pwm_over_current_led_n" SITE "65" ;
+LOCATE COMP "heartbeat_n" SITE "54" ;
+LOCATE COMP "cw_active_led_n" SITE "10" ;
+LOCATE COMP "modulate_active_led_n" SITE "9" ;
+LOCATE COMP "mcu_gpio" SITE "7" ;
+LOCATE COMP "TA_spare1" SITE "18" ;
+LOCATE COMP "TA_spare2" SITE "19" ;
+LOCATE COMP "TA_spare3" SITE "20" ;
+LOCATE COMP "TA_spare4" SITE "21" ;
+LOCATE COMP "TA_gpio1" SITE "53" ;
+LOCATE COMP "TA_gpio2" SITE "51" ;
+LOCATE COMP "TA_gpio3" SITE "52" ;
+LOCATE COMP "TA_gpio4" SITE "41" ;
+LOCATE COMP "OPT_gpio1" SITE "83" ;
+LOCATE COMP "OPT_gpio2" SITE "75" ;
+LOCATE COMP "OPT_gpio3" SITE "74" ;
+LOCATE COMP "OPT_gpio4" SITE "78" ;
+LOCATE COMP "rstn" SITE "8" ;
+LOCATE COMP "system_reset_n" SITE "38" ;
+LOCATE COMP "clk_25mhz" SITE "1" ;
+LOCATE COMP "TA_pos_pwr_good" SITE "15" ;
+LOCATE COMP "TA_neg_pwr_good" SITE "14" ;
+LOCATE COMP "TA_EE_shutdown" SITE "42" ;
+LOCATE COMP "TA_OPT_shutdown" SITE "43" ;
+LOCATE COMP "adc_sdo" SITE "84" ;
+LOCATE COMP "cw_compared" SITE "70" ;
+LOCATE COMP "pwm_compared" SITE "63" ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

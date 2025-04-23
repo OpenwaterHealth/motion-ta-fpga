@@ -1,0 +1,472 @@
+<HTML>
+<HEAD><TITLE>Synthesis and Ngdbuild Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Syn"></A><B><U><big>Synthesis and Ngdbuild  Report</big></U></B>
+synthesis:  version Diamond (64-bit) 3.13.0.56.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Mon Apr 14 10:52:17 2025
+
+
+Command Line:  synthesis -f TA_Driver_impl1_lattice.synproj -gui -msgset C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_3/promote.xml 
+
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 5.
+The -t option is TQFP100.
+The -d option is LCMXO2-2000HC.
+Using package TQFP100.
+Using performance grade 5.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-2000HC
+
+### Package : TQFP100
+
+### Speed   : 5
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Timing
+Top-level module name = top.
+Target frequency = 50.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_3 (searchpath added)
+-p C:/lscc/diamond/3.13/ispfpga/xo2c00/data (searchpath added)
+-p C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_3/impl1 (searchpath added)
+-p C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_3 (searchpath added)
+Verilog design file = C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_3/src/top.v
+Verilog design file = C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_3/src/registers.v
+Verilog design file = C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_3/src/driver_control.v
+Verilog design file = C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_3/src/i2c_slave_top.v
+Verilog design file = C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_3/src/heart_beat.v
+Verilog design file = C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_3/src/adc_control.v
+Verilog design file = C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_3/src/i2cslave_controller_top.v
+Verilog design file = C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_3/src/i2cslave_controller.v
+Verilog design file = C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_3/src/reset_generator.v
+Verilog design file = C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_3/src/filter.v
+Verilog design file = C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_3/TestBench/top_tb.v
+Verilog design file = C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_3/TestBench/tb_defines.v
+Verilog design file = C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_3/TestBench/i2c_master.v
+NGD file = TA_Driver_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/top.v. VERI-1482
+Analyzing Verilog file c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/registers.v. VERI-1482
+Analyzing Verilog file c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/driver_control.v. VERI-1482
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/driver_control.v(75): redeclaration of ansi port force_trigger is not allowed. VERI-1372
+Analyzing Verilog file c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2c_slave_top.v. VERI-1482
+Analyzing Verilog file c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/heart_beat.v. VERI-1482
+Analyzing Verilog file c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/adc_control.v. VERI-1482
+Analyzing Verilog file c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller_top.v. VERI-1482
+Analyzing Verilog file c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v. VERI-1482
+Analyzing Verilog file c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/reset_generator.v. VERI-1482
+Analyzing Verilog file c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/filter.v. VERI-1482
+Analyzing Verilog file c:/project/working/fpga/home/lattice/ta_driver/rev_3/testbench/top_tb.v. VERI-1482
+INFO - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/testbench/top_tb.v(2): analyzing included file c:/project/working/fpga/home/lattice/ta_driver/rev_3/testbench/tb_defines.v. VERI-1328
+Analyzing Verilog file c:/project/working/fpga/home/lattice/ta_driver/rev_3/testbench/tb_defines.v. VERI-1482
+Analyzing Verilog file c:/project/working/fpga/home/lattice/ta_driver/rev_3/testbench/i2c_master.v. VERI-1482
+INFO - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/testbench/i2c_master.v(51): analyzing included file c:/project/working/fpga/home/lattice/ta_driver/rev_3/testbench/tb_defines.v. VERI-1328
+Analyzing Verilog file C:/lscc/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Top module name (Verilog): top
+INFO - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/top.v(20): compiling module top. VERI-1018
+INFO - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/reset_generator.v(21): compiling module reset_generator. VERI-1018
+INFO - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/heart_beat.v(21): compiling module heart_beat. VERI-1018
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/heart_beat.v(40): expression size 32 truncated to fit in target size 16. VERI-1209
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/heart_beat.v(49): expression size 32 truncated to fit in target size 16. VERI-1209
+INFO - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2c_slave_top.v(20): compiling module i2c_slave_top. VERI-1018
+INFO - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller_top.v(53): compiling module i2cslave_controller_top. VERI-1018
+INFO - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/filter.v(39): compiling module filter. VERI-1018
+INFO - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v(54): compiling module i2cslave_controller. VERI-1018
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v(408): expression size 32 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v(433): expression size 32 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v(454): expression size 32 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v(495): expression size 32 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v(545): expression size 32 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v(582): expression size 32 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller_top.v(180): expression size 32 truncated to fit in target size 4. VERI-1209
+INFO - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/registers.v(3): compiling module registers. VERI-1018
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/registers.v(86): expression size 32 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/registers.v(208): expression size 32 truncated to fit in target size 8. VERI-1209
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/registers.v(213): expression size 32 truncated to fit in target size 8. VERI-1209
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/registers.v(230): expression size 32 truncated to fit in target size 12. VERI-1209
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/registers.v(255): expression size 32 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/top.v(173): actual bit length 1 differs from formal bit length 8 for port monitor_status. VERI-1330
+INFO - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/driver_control.v(3): compiling module driver_control. VERI-1018
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/driver_control.v(94): expression size 32 truncated to fit in target size 16. VERI-1209
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/driver_control.v(128): expression size 32 truncated to fit in target size 24. VERI-1209
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/driver_control.v(152): expression size 32 truncated to fit in target size 8. VERI-1209
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/driver_control.v(182): expression size 32 truncated to fit in target size 24. VERI-1209
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/driver_control.v(191): expression size 32 truncated to fit in target size 24. VERI-1209
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/driver_control.v(249): expression size 32 truncated to fit in target size 16. VERI-1209
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/driver_control.v(286): expression size 32 truncated to fit in target size 8. VERI-1209
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/top.v(194): actual bit length 32 differs from formal bit length 1 for port trigger. VERI-1330
+INFO - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/adc_control.v(21): compiling module adc_control. VERI-1018
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/adc_control.v(91): expression size 32 truncated to fit in target size 8. VERI-1209
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/adc_control.v(104): expression size 32 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/adc_control.v(129): expression size 32 truncated to fit in target size 8. VERI-1209
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/top.v(233): actual bit length 1 differs from formal bit length 8 for port monitor_status. VERI-1330
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/top.v(87): net status[0] does not have a driver. VDB-1002
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/top.v(224): net adc_status_clear does not have a driver. VDB-1002
+Loading NGL library 'C:/lscc/diamond/3.13/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.13/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.13/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.13/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c2000.nph' in environment: C:/lscc/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.44.
+Top-level module name = top.
+WARNING - synthesis: I/O Port trigger 's net has no driver and is unused.
+WARNING - synthesis: I/O Port laser_disable_led_n 's net has no driver and is unused.
+######## Converting I/O port temp_scl to output.
+######## Converting I/O port temp_sda to output.
+WARNING - synthesis: I/O Port cw_over_current_led_n 's net has no driver and is unused.
+WARNING - synthesis: I/O Port pwm_over_current_led_n 's net has no driver and is unused.
+WARNING - synthesis: I/O Port cw_active_led_n 's net has no driver and is unused.
+WARNING - synthesis: I/O Port modulate_active_led_n 's net has no driver and is unused.
+######## Converting I/O port mcu_gpio to output.
+######## Converting I/O port TA_spare1 to output.
+######## Converting I/O port TA_spare2 to output.
+######## Converting I/O port TA_spare3 to output.
+######## Converting I/O port TA_spare4 to output.
+######## Converting I/O port TA_gpio1 to output.
+######## Converting I/O port TA_gpio2 to output.
+######## Converting I/O port TA_gpio3 to output.
+######## Converting I/O port TA_gpio4 to output.
+######## Converting I/O port OPT_gpio1 to output.
+######## Converting I/O port OPT_gpio2 to output.
+######## Converting I/O port OPT_gpio3 to output.
+######## Converting I/O port OPT_gpio4 to output.
+######## Missing driver on net laser_disable_led_n. Patching with GND.
+######## Missing driver on net cw_over_current_led_n. Patching with GND.
+######## Missing driver on net pwm_over_current_led_n. Patching with GND.
+######## Missing driver on net cw_active_led_n. Patching with GND.
+######## Missing driver on net modulate_active_led_n. Patching with GND.
+######## Missing driver on net status[0]. Patching with GND.
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v(313): Register \i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1/addr_10bit_en_reg_i_754 is stuck at Zero. VDB-5013
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v(323): Register \i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1/hs_mode_reg_i_755 is stuck at Zero. VDB-5013
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v(735): Register \i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1/addr_ack2_i_773 is stuck at Zero. VDB-5013
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v(745): Register \i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1/master_code_not_ack_reg_i_776 is stuck at Zero. VDB-5013
+INFO - synthesis: Extracted state machine for register '\i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1/next_state_i' with one-hot encoding
+original encoding -> new encoding (one-hot encoding)
+
+ 0000 -> 00000001
+
+ 0001 -> 00000010
+
+ 0010 -> 00000100
+
+ 0011 -> 00001000
+
+ 0100 -> 00010000
+
+ 0101 -> 00100000
+
+ 0110 -> 01000000
+
+ 0111 -> 10000000
+
+
+
+
+WARNING - synthesis: Bit 3 of Register \i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1/next_state_i_FSM is stuck at Zero
+WARNING - synthesis: Bit 7 of Register \i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1/next_state_i_FSM is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \driver_control/cstate is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \driver_control/pulse_state is stuck at Zero
+WARNING - synthesis: I/O Port trigger 's net has no driver and is unused.
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/driver_control.v(338): Register \driver_control/data_i0_i0 is stuck at Zero. VDB-5013
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v(618): Register \i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1/next_state_i_FSM_i2 is stuck at Zero. VDB-5013
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/driver_control.v(293): Register \driver_control/data_temp_i0_i0 is stuck at Zero. VDB-5013
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v(1087): Register \i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1/timeout_state_i__i1 is stuck at Zero. VDB-5013
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v(1097): Register \i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1/reset_fsm_i_804 is stuck at Zero. VDB-5013
+WARNING - synthesis: c:/project/working/fpga/home/lattice/ta_driver/rev_3/src/i2cslave_controller.v(1074): Register \i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1/timeout_counter_i_1184__i0 is stuck at Zero. VDB-5013
+GSR instance connected to net reset_n.
+Duplicate register/latch removal. \adc_control/capture_state_i0 is a one-to-one match with \adc_control/capture_state_i1.
+Duplicate register/latch removal. \driver_control/cstate__i1 is a one-to-one match with \driver_control/cstate__i2.
+Duplicate register/latch removal. \driver_control/pulse_state__i1 is a one-to-one match with \driver_control/pulse_state__i2.
+Duplicate register/latch removal. \adc_control/adc_voltage_data_temp_i15 is a one-to-one match with \adc_control/adc_voltage_data_temp_i14.
+Duplicate register/latch removal. \driver_control/data_i0_i21 is a one-to-one match with \driver_control/data_i0_i20.
+Duplicate register/latch removal. \adc_control/capture_state_i0 is a one-to-one match with \adc_control/capture_state_i1.
+Duplicate register/latch removal. \adc_control/adc_voltage_data_temp_i15 is a one-to-one match with \adc_control/adc_voltage_data_temp_i14.
+Duplicate register/latch removal. \adc_control/capture_state_i0 is a one-to-one match with \adc_control/capture_state_i1.
+Duplicate register/latch removal. \adc_control/adc_voltage_data_temp_i15 is a one-to-one match with \adc_control/adc_voltage_data_temp_i14.
+Duplicate register/latch removal. \adc_control/capture_state_i0 is a one-to-one match with \adc_control/capture_state_i1.
+Duplicate register/latch removal. \adc_control/adc_voltage_data_temp_i15 is a one-to-one match with \adc_control/adc_voltage_data_temp_i14.
+Duplicate register/latch removal. \adc_control/capture_state_i0 is a one-to-one match with \adc_control/capture_state_i1.
+Duplicate register/latch removal. \adc_control/adc_voltage_data_temp_i15 is a one-to-one match with \adc_control/adc_voltage_data_temp_i14.
+Duplicate register/latch removal. \adc_control/capture_state_i0 is a one-to-one match with \adc_control/capture_state_i1.
+Duplicate register/latch removal. \adc_control/adc_voltage_data_temp_i15 is a one-to-one match with \adc_control/adc_voltage_data_temp_i14.
+Duplicate register/latch removal. \adc_control/capture_state_i0 is a one-to-one match with \adc_control/capture_state_i1.
+Duplicate register/latch removal. \adc_control/adc_voltage_data_temp_i15 is a one-to-one match with \adc_control/adc_voltage_data_temp_i14.
+Duplicate register/latch removal. \adc_control/capture_state_i0 is a one-to-one match with \adc_control/capture_state_i1.
+Duplicate register/latch removal. \adc_control/adc_voltage_data_temp_i15 is a one-to-one match with \adc_control/adc_voltage_data_temp_i14.
+Duplicate register/latch removal. \adc_control/capture_state_i0 is a one-to-one match with \adc_control/capture_state_i1.
+Duplicate register/latch removal. \adc_control/adc_voltage_data_temp_i15 is a one-to-one match with \adc_control/adc_voltage_data_temp_i14.
+Duplicate register/latch removal. \adc_control/capture_state_i0 is a one-to-one match with \adc_control/capture_state_i1.
+Duplicate register/latch removal. \adc_control/adc_voltage_data_temp_i15 is a one-to-one match with \adc_control/adc_voltage_data_temp_i14.
+Applying 50.000000 MHz constraint to all clocks
+
+Duplicate register/latch removal. \adc_control/capture_state_i0 is a one-to-one match with \adc_control/capture_state_i1.
+Duplicate register/latch removal. \adc_control/adc_voltage_data_temp_i15 is a one-to-one match with \adc_control/adc_voltage_data_temp_i14.
+Duplicate register/latch removal. \adc_control/capture_state_i0 is a one-to-one match with \adc_control/capture_state_i1.
+Duplicate register/latch removal. \adc_control/adc_voltage_data_temp_i15 is a one-to-one match with \adc_control/adc_voltage_data_temp_i14.
+Duplicate register/latch removal. \adc_control/capture_state_i0 is a one-to-one match with \adc_control/capture_state_i1.
+Duplicate register/latch removal. \adc_control/adc_voltage_data_temp_i15 is a one-to-one match with \adc_control/adc_voltage_data_temp_i14.
+Duplicate register/latch removal. \adc_control/capture_state_i0 is a one-to-one match with \adc_control/capture_state_i1.
+Duplicate register/latch removal. \adc_control/adc_voltage_data_temp_i15 is a one-to-one match with \adc_control/adc_voltage_data_temp_i14.
+Duplicate register/latch removal. \adc_control/capture_state_i0 is a one-to-one match with \adc_control/capture_state_i1.
+Duplicate register/latch removal. \adc_control/adc_voltage_data_temp_i15 is a one-to-one match with \adc_control/adc_voltage_data_temp_i14.
+Duplicate register/latch removal. \adc_control/capture_state_i0 is a one-to-one match with \adc_control/capture_state_i1.
+Duplicate register/latch removal. \adc_control/adc_voltage_data_temp_i15 is a one-to-one match with \adc_control/adc_voltage_data_temp_i14.
+Duplicate register/latch removal. \adc_control/capture_state_i0 is a one-to-one match with \adc_control/capture_state_i1.
+Duplicate register/latch removal. \adc_control/adc_voltage_data_temp_i15 is a one-to-one match with \adc_control/adc_voltage_data_temp_i14.
+Duplicate register/latch removal. \adc_control/capture_state_i0 is a one-to-one match with \adc_control/capture_state_i1.
+Duplicate register/latch removal. \adc_control/adc_voltage_data_temp_i15 is a one-to-one match with \adc_control/adc_voltage_data_temp_i14.
+Duplicate register/latch removal. \adc_control/capture_state_i0 is a one-to-one match with \adc_control/capture_state_i1.
+Duplicate register/latch removal. \adc_control/adc_voltage_data_temp_i15 is a one-to-one match with \adc_control/adc_voltage_data_temp_i14.
+Duplicate register/latch removal. \adc_control/capture_state_i0 is a one-to-one match with \adc_control/capture_state_i1.
+Duplicate register/latch removal. \adc_control/adc_voltage_data_temp_i15 is a one-to-one match with \adc_control/adc_voltage_data_temp_i14.
+Duplicate register/latch removal. \adc_control/capture_state_i0 is a one-to-one match with \adc_control/capture_state_i1.
+Duplicate register/latch removal. \adc_control/adc_voltage_data_temp_i15 is a one-to-one match with \adc_control/adc_voltage_data_temp_i14.
+Duplicate register/latch removal. \adc_control/capture_state_i0 is a one-to-one match with \adc_control/capture_state_i1.
+Duplicate register/latch removal. \adc_control/adc_voltage_data_temp_i15 is a one-to-one match with \adc_control/adc_voltage_data_temp_i14.
+WARNING - synthesis: No user .sdc file.
+Results of NGD DRC are available in top_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.13/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.13/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.13/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.13/ispfpga/or5g00/data/orc5glib.ngl'...
+WARNING - synthesis: logical net 'trigger' has no load.
+WARNING - synthesis: input pad net 'trigger' has no legal load.
+WARNING - synthesis: DRC complete with 2 warnings.
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file TA_Driver_impl1.ngd.
+
+################### Begin Area Report (top)######################
+Number of register bits => 595 of 2352 (25 % )
+BB => 2
+CCU2D => 142
+FD1P3AX => 197
+FD1P3AY => 30
+FD1P3BX => 3
+FD1P3DX => 36
+FD1P3IX => 73
+FD1P3JX => 3
+FD1S1D => 8
+FD1S3AX => 169
+FD1S3AY => 3
+FD1S3BX => 10
+FD1S3DX => 18
+FD1S3IX => 45
+GSR => 1
+IB => 10
+INV => 4
+L6MUX21 => 25
+LUT4 => 537
+OB => 28
+PFUMX => 47
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 17
+  Net : clk_25mhz_c, loads : 343
+  Net : driver_control/clk_count_3, loads : 77
+  Net : adc_control/adc_sck_temp, loads : 44
+  Net : driver_control/sck_temp, loads : 32
+  Net : i2c_slave_top/registers/data_vld_dly, loads : 20
+  Net : i2c_slave_top/i2cslave_controller_top/filter_scl_inst/out_n, loads : 21
+  Net : i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1/sda_reg, loads : 12
+  Net : heart_beat/prescale_15, loads : 9
+  Net : reset_generator/clk_d2, loads : 5
+  Net : i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1/addr_i_7__N_590, loads : 2
+  Net : i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1/addr_i_7__N_592, loads : 2
+  Net : i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1/addr_i_7__N_586, loads : 2
+  Net : i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1/addr_i_7__N_591, loads : 2
+  Net : i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1/addr_i_7__N_593, loads : 2
+  Net : i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1/addr_i_7__N_594, loads : 2
+  Net : i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1/addr_i_7__N_595, loads : 2
+  Net : i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1/addr_i_7__N_589, loads : 2
+Clock Enable Nets
+Number of Clock Enables: 75
+Top 10 highest fanout Clock Enables:
+  Net : driver_control/clk_count_3__N_891_enable_27, loads : 24
+  Net : driver_control/sck_temp_enable_21, loads : 19
+  Net : driver_control/clk_25mhz_c_enable_147, loads : 18
+  Net : adc_control/adc_sck_temp_enable_18, loads : 18
+  Net : adc_control/count_1, loads : 12
+  Net : adc_control/count_2, loads : 12
+  Net : driver_control/TA_spare4_c, loads : 11
+  Net : adc_control/state_1, loads : 11
+  Net : adc_control/state_2, loads : 10
+  Net : adc_control/state_3, loads : 10
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : i2c_slave_top/registers/addr_i_1, loads : 64
+  Net : i2c_slave_top/registers/n10101, loads : 55
+  Net : i2c_slave_top/registers/n10100, loads : 35
+  Net : reset_generator/n10095, loads : 30
+  Net : i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1/n10081, loads : 30
+  Net : reset_generator/state_3__N_879, loads : 29
+  Net : driver_control/clk_count_3__N_891, loads : 27
+  Net : driver_control/state_1, loads : 26
+  Net : i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1/count_i_0, loads : 26
+  Net : driver_control/state_3, loads : 25
+################### End Clock Report ##################
+
+<A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 20.000000 -name    |             |             |
+clk8 [get_nets                          |             |             |
+\i2c_slave_top/i2cslave_controller_top/i|             |             |
+2cslave_controller_u1/sda_reg]          |   50.000 MHz|  180.766 MHz|     3  
+                                        |             |             |
+create_clock -period 20.000000 -name    |             |             |
+clk7 [get_nets \heart_beat/prescale[15]]|   50.000 MHz|  254.453 MHz|     6  
+                                        |             |             |
+create_clock -period 20.000000 -name    |             |             |
+clk6 [get_nets \driver_control/sck_temp]|   50.000 MHz|  164.204 MHz|     4  
+                                        |             |             |
+create_clock -period 20.000000 -name    |             |             |
+clk5 [get_nets                          |             |             |
+\i2c_slave_top/i2cslave_controller_top/o|             |             |
+ut_n]                                   |   50.000 MHz|   54.526 MHz|     6  
+                                        |             |             |
+create_clock -period 20.000000 -name    |             |             |
+clk4 [get_nets \reset_generator/clk_d2] |   50.000 MHz|  183.993 MHz|     3  
+                                        |             |             |
+create_clock -period 20.000000 -name    |             |             |
+clk3 [get_nets                          |             |             |
+\i2c_slave_top/registers/data_vld_dly]  |   50.000 MHz|  120.788 MHz|     9  
+                                        |             |             |
+create_clock -period 20.000000 -name    |             |             |
+clk2 [get_nets                          |             |             |
+\driver_control/clk_count[3]]           |   50.000 MHz|  116.713 MHz|    16  
+                                        |             |             |
+create_clock -period 20.000000 -name    |             |             |
+clk1 [get_nets clk_25mhz_c]             |   50.000 MHz|   88.731 MHz|     3  
+                                        |             |             |
+create_clock -period 20.000000 -name    |             |             |
+clk0 [get_nets                          |             |             |
+\adc_control/adc_sck_temp]              |   50.000 MHz|  127.340 MHz|     5  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Peak Memory Usage: 76.586  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 2.016  secs
+--------------------------------------------------------------
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

@@ -1,0 +1,48 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Mon Apr 14 10:52:37 2025 *
+NOTE DESIGN NAME: top *
+NOTE DEVICE NAME: LCMXO2-2000HC-5TQFP100 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS sda : 58 : inout *
+NOTE PINS scl : 57 : inout *
+NOTE PINS TA_laser_disable : 88 : out *
+NOTE PINS laser_disable_led_n : 12 : out *
+NOTE PINS adc_sck : 81 : out *
+NOTE PINS ldac_n : 66 : out *
+NOTE PINS ss : 68 : out *
+NOTE PINS mosi : 69 : out *
+NOTE PINS sck : 67 : out *
+NOTE PINS adc_convert : 71 : out *
+NOTE PINS temp_scl : 60 : out *
+NOTE PINS temp_sda : 61 : out *
+NOTE PINS cw_over_current_led_n : 64 : out *
+NOTE PINS pwm_over_current_led_n : 65 : out *
+NOTE PINS heartbeat_n : 54 : out *
+NOTE PINS cw_active_led_n : 10 : out *
+NOTE PINS modulate_active_led_n : 9 : out *
+NOTE PINS mcu_gpio : 7 : out *
+NOTE PINS TA_spare1 : 18 : out *
+NOTE PINS TA_spare2 : 19 : out *
+NOTE PINS TA_spare3 : 20 : out *
+NOTE PINS TA_spare4 : 21 : out *
+NOTE PINS TA_gpio1 : 53 : out *
+NOTE PINS TA_gpio2 : 51 : out *
+NOTE PINS TA_gpio3 : 52 : out *
+NOTE PINS TA_gpio4 : 41 : out *
+NOTE PINS OPT_gpio1 : 83 : out *
+NOTE PINS OPT_gpio2 : 75 : out *
+NOTE PINS OPT_gpio3 : 74 : out *
+NOTE PINS OPT_gpio4 : 78 : out *
+NOTE PINS rstn : 8 : in *
+NOTE PINS system_reset_n : 38 : in *
+NOTE PINS clk_25mhz : 1 : in *
+NOTE PINS TA_pos_pwr_good : 15 : in *
+NOTE PINS TA_neg_pwr_good : 14 : in *
+NOTE PINS TA_EE_shutdown : 42 : in *
+NOTE PINS TA_OPT_shutdown : 43 : in *
+NOTE PINS adc_sdo : 84 : in *
+NOTE PINS cw_compared : 70 : in *
+NOTE PINS pwm_compared : 63 : in *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

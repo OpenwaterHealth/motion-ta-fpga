@@ -1,0 +1,77 @@
+Loading design for application iotiming from file ta_driver_impl1.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-2000HC
+Package:     TQFP100
+Performance: 6
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Loading design for application iotiming from file ta_driver_impl1.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-2000HC
+Package:     TQFP100
+Performance: M
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+// Design: top
+// Package: TQFP100
+// ncd File: ta_driver_impl1.ncd
+// Version: Diamond (64-bit) 3.13.0.56.2
+// Written on Mon Apr 14 10:52:34 2025
+// M: Minimum Performance Grade
+// iotiming TA_Driver_impl1.ncd TA_Driver_impl1.prf -gui -msgset C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_3/promote.xml
+
+I/O Timing Report (All units are in ns)
+
+Worst Case Results across Performance Grades (M, 6, 5):
+
+// Input Setup and Hold Times
+
+Port            Clock     Edge  Setup Performance_Grade  Hold Performance_Grade
+----------------------------------------------------------------------
+TA_EE_shutdown  clk_25mhz R     1.357      5       0.040     M
+TA_OPT_shutdown clk_25mhz R     2.056      5      -0.163     M
+TA_neg_pwr_good clk_25mhz R     2.060      5      -0.153     M
+TA_pos_pwr_good clk_25mhz R     2.398      5      -0.255     M
+cw_compared     clk_25mhz R     1.792      5      -0.074     M
+pwm_compared    clk_25mhz R     2.322      5      -0.214     M
+rstn            clk_25mhz R     0.752      5       0.728     5
+scl             clk_25mhz R     0.141      5       0.967     5
+sda             clk_25mhz R     0.945      5       0.343     6
+system_reset_n  clk_25mhz R     1.546      5      -0.049     M
+
+
+// Clock to Output Delay
+
+Port        Clock     Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
+------------------------------------------------------------------------
+TA_spare1   clk_25mhz R    10.772         5        3.478          M
+TA_spare2   clk_25mhz F    11.165         5        3.629          M
+TA_spare3   clk_25mhz R    10.014         5        3.268          M
+TA_spare4   clk_25mhz R    10.787         5        3.480          M
+adc_convert clk_25mhz R    10.378         5        3.353          M
+adc_sck     clk_25mhz R    13.298         5        3.844          M
+mosi        clk_25mhz F    10.125         5        3.276          M
+sck         clk_25mhz R     9.950         5        3.217          M
+ss          clk_25mhz R    10.446         5        3.347          M
+
+
+// Internal_Clock to Input
+
+Port            Internal_Clock                                             
+--------------------------------------------------------
+adc_sdo         adc_control/adc_sck_temp                                   
+rstn            reset_generator/clk_d2                                     
+
+
+// Internal_Clock to Output
+
+Port        Internal_Clock                                             
+--------------------------------------------------------
+heartbeat_n heart_beat/prescale[15]                                    
+sda         i2c_slave_top/i2cslave_controller_top/filter_scl_inst/out_n
+WARNING: you must also run trce with hold speed: 5
+WARNING: you must also run trce with hold speed: 6
