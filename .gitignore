@@ -1,6 +1,7 @@
 # For PCBs designed using KiCad: http://www.kicad-pcb.org/
 
 impl1/
+TA_Driver_tcr.dir/
 
 # Temporary files
 *.000

@@ -1,6 +1,0 @@
-#Start recording tcl command: 4/1/2025 10:50:28
-#Project Location: C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_3; Project name: TA_Driver
-prj_project open "C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_3/TA_Driver.ldf"
-pgr_project close
-prj_project close
-#Stop recording: 4/1/2025 10:59:01
