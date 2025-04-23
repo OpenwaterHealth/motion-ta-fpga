@@ -1,417 +1,0 @@
-<HTML>
-<HEAD><TITLE>Place & Route Report</TITLE>
-<STYLE TYPE="text/css">
-<!--
- body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
--->
-</STYLE>
-</HEAD>
-<PRE><A name="Par"></A>PAR: Place And Route Diamond (64-bit) 3.13.0.56.2.
-Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
-Copyright (c) 1995 AT&amp;T Corp.   All rights reserved.
-Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
-Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Apr 14 10:52:22 2025
-
-C:/lscc/diamond/3.13/ispfpga\bin\nt64\par -f TA_Driver_impl1.p2t
-TA_Driver_impl1_map.ncd TA_Driver_impl1.dir TA_Driver_impl1.prf -gui -msgset
-C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_3/promote.xml
-
-
-Preference file: TA_Driver_impl1.prf.
-
-<A name="par_cts"></A><B><U><big>Cost Table Summary</big></U></B>
-Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
-Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
-----------   --------     -----        ------       -----------  -----------  ----         ------
-<span style="background-color:red">5_1   *      0            -1093.254    2147483647   -2.087       236540       11           Completed</span>
-* : Design saved.
-
-Total (real) run time for 1-seed: 11 secs 
-
-par done!
-
-Note: user must run &apos;Trace&apos; for timing closure signoff.
-
-Lattice Place and Route Report for Design &quot;TA_Driver_impl1_map.ncd&quot;
-Mon Apr 14 10:52:22 2025
-
-
-<A name="par_best"></A><B><U><big>Best Par Run</big></U></B>
-PAR: Place And Route Diamond (64-bit) 3.13.0.56.2.
-Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/Project/Working/FPGA/HOME/Lattice/TA_Driver/Rev_3/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF:clockSkewMin=2:parASE=1 TA_Driver_impl1_map.ncd TA_Driver_impl1.dir/5_1.ncd TA_Driver_impl1.prf
-Preference file: TA_Driver_impl1.prf.
-Placement level-cost: 5-1.
-Routing Iterations: 6
-
-Loading design for application par from file TA_Driver_impl1_map.ncd.
-Design name: top
-NCD version: 3.3
-Vendor:      LATTICE
-Device:      LCMXO2-2000HC
-Package:     TQFP100
-Performance: 5
-Loading device for application par from file &apos;xo2c2000.nph&apos; in environment: C:/lscc/diamond/3.13/ispfpga.
-Package Status:                     Final          Version 1.44.
-Performance Hardware Data Status:   Final          Version 34.4.
-License checked out.
-
-
-Ignore Preference Error(s):  True
-
-<A name="par_dus"></A><B><U><big>Device utilization summary:</big></U></B>
-
-   PIO (prelim)   40+4(JTAG)/216     20% used
-                  40+4(JTAG)/80      55% bonded
-
-   SLICE            444/1056         42% used
-
-   GSR                1/1           100% used
-
-
-Number of Signals: 1444
-Number of Connections: 3663
-WARNING - par: Placement timing preferences are hard to meet. However, placement will continue. Use static timing analysis to identify errors.
-
-Pin Constraint Summary:
-   40 out of 40 pins locked (100% locked).
-
-The following 6 signals are selected to use the primary clock routing resources:
-    clk_25mhz_c (driver: clk_25mhz, clk load #: 196)
-    driver_control/clk_count[3] (driver: driver_control/SLICE_41, clk load #: 55)
-    adc_control/adc_sck_temp (driver: adc_control/SLICE_146, clk load #: 27)
-    i2c_slave_top/i2cslave_controller_top/filter_scl_inst/out_n (driver: i2c_slave_top/i2cslave_controller_top/filter_scl_inst/SLICE_312, clk load #: 24)
-    i2c_slave_top/registers/data_vld_dly (driver: i2c_slave_top/SLICE_354, clk load #: 20)
-    driver_control/sck_temp (driver: driver_control/SLICE_278, clk load #: 16)
-
-WARNING - par: Signal &quot;clk_25mhz_c&quot; is selected to use Primary clock resources. However, its driver comp &quot;clk_25mhz&quot; is located at &quot;1&quot;, which is not a dedicated pin for connecting to Primary clock resources. General routing has to be used to route this signal, and it might suffer from excessive delay or skew.
-
-The following 6 signals are selected to use the secondary clock routing resources:
-    state_3__N_879 (driver: SLICE_414, clk load #: 0, sr load #: 16, ce load #: 0)
-    driver_control/clk_count_3__N_891_enable_27 (driver: driver_control/SLICE_277, clk load #: 0, sr load #: 0, ce load #: 13)
-    driver_control/n5228 (driver: driver_control/SLICE_427, clk load #: 0, sr load #: 13, ce load #: 0)
-    driver_control/n518 (driver: SLICE_446, clk load #: 0, sr load #: 13, ce load #: 0)
-    driver_control/sck_temp_enable_21 (driver: driver_control/SLICE_541, clk load #: 0, sr load #: 0, ce load #: 10)
-    heart_beat/prescale[15] (driver: SLICE_128, clk load #: 5, sr load #: 0, ce load #: 0)
-
-Signal reset_n is selected as Global Set/Reset.
-Starting Placer Phase 0.
-.........
-Finished Placer Phase 0.  REAL time: 0 secs 
-
-Starting Placer Phase 1.
-....................
-Placer score = 122858788.
-Finished Placer Phase 1.  REAL time: 4 secs 
-
-Starting Placer Phase 2.
-.
-Placer score =  122309146
-Finished Placer Phase 2.  REAL time: 4 secs 
-
-
-
-<A name="par_clk"></A><B><U><big>Clock Report</big></U></B>
-
-Global Clock Resources:
-  CLK_PIN    : 0 out of 8 (0%)
-  General PIO: 1 out of 216 (0%)
-  PLL        : 0 out of 1 (0%)
-  DCM        : 0 out of 2 (0%)
-  DCC        : 0 out of 8 (0%)
-
-Global Clocks:
-  PRIMARY &quot;clk_25mhz_c&quot; from comp &quot;clk_25mhz&quot; on PIO site &quot;1 (PL2A)&quot;, clk load = 196
-  PRIMARY &quot;driver_control/clk_count[3]&quot; from Q0 on comp &quot;driver_control/SLICE_41&quot; on site &quot;R2C14C&quot;, clk load = 55
-  PRIMARY &quot;adc_control/adc_sck_temp&quot; from Q0 on comp &quot;adc_control/SLICE_146&quot; on site &quot;R9C2C&quot;, clk load = 27
-  PRIMARY &quot;i2c_slave_top/i2cslave_controller_top/filter_scl_inst/out_n&quot; from Q0 on comp &quot;i2c_slave_top/i2cslave_controller_top/filter_scl_inst/SLICE_312&quot; on site &quot;R6C14D&quot;, clk load = 24
-  PRIMARY &quot;i2c_slave_top/registers/data_vld_dly&quot; from Q0 on comp &quot;i2c_slave_top/SLICE_354&quot; on site &quot;R10C17C&quot;, clk load = 20
-  PRIMARY &quot;driver_control/sck_temp&quot; from Q0 on comp &quot;driver_control/SLICE_278&quot; on site &quot;R10C4D&quot;, clk load = 16
-  SECONDARY &quot;state_3__N_879&quot; from F1 on comp &quot;SLICE_414&quot; on site &quot;R11C15D&quot;, clk load = 0, ce load = 0, sr load = 16
-  SECONDARY &quot;driver_control/clk_count_3__N_891_enable_27&quot; from F1 on comp &quot;driver_control/SLICE_277&quot; on site &quot;R13C24B&quot;, clk load = 0, ce load = 13, sr load = 0
-  SECONDARY &quot;driver_control/n5228&quot; from F1 on comp &quot;driver_control/SLICE_427&quot; on site &quot;R6C21C&quot;, clk load = 0, ce load = 0, sr load = 13
-  SECONDARY &quot;driver_control/n518&quot; from F0 on comp &quot;SLICE_446&quot; on site &quot;R7C25C&quot;, clk load = 0, ce load = 0, sr load = 13
-  SECONDARY &quot;driver_control/sck_temp_enable_21&quot; from F0 on comp &quot;driver_control/SLICE_541&quot; on site &quot;R13C12D&quot;, clk load = 0, ce load = 10, sr load = 0
-  SECONDARY &quot;heart_beat/prescale[15]&quot; from Q0 on comp &quot;SLICE_128&quot; on site &quot;R6C25A&quot;, clk load = 5, ce load = 0, sr load = 0
-
-  PRIMARY  : 6 out of 8 (75%)
-  SECONDARY: 6 out of 8 (75%)
-
-Edge Clocks:
-  No edge clock selected.
-
-
-
-
-I/O Usage Summary (final):
-   40 + 4(JTAG) out of 216 (20.4%) PIO sites used.
-   40 + 4(JTAG) out of 80 (55.0%) bonded PIO sites used.
-   Number of PIO comps: 40; differential: 0.
-   Number of Vref pins used: 0.
-
-I/O Bank Usage Summary:
-+----------+----------------+------------+-----------+
-| I/O Bank | Usage          | Bank Vccio | Bank Vref |
-+----------+----------------+------------+-----------+
-| 0        | 5 / 19 ( 26%)  | 2.5V       | -         |
-| 1        | 19 / 21 ( 90%) | 2.5V       | -         |
-| 2        | 4 / 20 ( 20%)  | 2.5V       | -         |
-| 3        | 4 / 6 ( 66%)   | 2.5V       | -         |
-| 4        | 3 / 6 ( 50%)   | 2.5V       | -         |
-| 5        | 5 / 8 ( 62%)   | 2.5V       | -         |
-+----------+----------------+------------+-----------+
-
-Total placer CPU time: 3 secs 
-
-Dumping design to file TA_Driver_impl1.dir/5_1.ncd.
-
-0 connections routed; 3663 unrouted.
-Starting router resource preassignment
-
-WARNING - par: The following clock signals will be routed by using generic routing resource and may suffer from excessive delay and/or skew.
-   Signal=i2c_slave_top/addr_i_7__N_594 loads=2 clock_loads=1
-   Signal=i2c_slave_top/addr_i_7__N_590 loads=2 clock_loads=1
-   Signal=i2c_slave_top/addr_i_7__N_591 loads=2 clock_loads=1
-   Signal=i2c_slave_top/addr_i_7__N_592 loads=2 clock_loads=1
-   Signal=i2c_slave_top/addr_i_7__N_593 loads=2 clock_loads=1
-   Signal=i2c_   ....   _loads=1
-   Signal=i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1/sda_reg loads=12 clock_loads=2
-   Signal=reset_generator/clk_d2 loads=4 clock_loads=3
-
-Completed router resource preassignment. Real time: 5 secs 
-
-Start NBR router at 10:52:27 04/14/25
-
-*****************************************************************
-Info: NBR allows conflicts(one node used by more than one signal)
-      in the earlier iterations. In each iteration, it tries to  
-      solve the conflicts while keeping the critical connections 
-      routed as short as possible. The routing process is said to
-      be completed when no conflicts exist and all connections   
-      are routed.                                                
-Note: NBR uses a different method to calculate timing slacks. The
-      worst slack and total negative slack may not be the same as
-      that in TRCE report. You should always run TRCE to verify  
-      your design.                                               
-*****************************************************************
-
-Start NBR special constraint process at 10:52:27 04/14/25
-
-Start NBR section for initial routing at 10:52:28 04/14/25
-Level 1, iteration 1
-20(0.02%) conflicts; 2682(73.22%) untouched conns; 619560664 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1321.076ns/-619560.665ns; real time: 6 secs 
-Level 2, iteration 1
-10(0.01%) conflicts; 2684(73.27%) untouched conns; 619186736 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1318.758ns/-619186.737ns; real time: 6 secs 
-Level 3, iteration 1
-9(0.01%) conflicts; 2684(73.27%) untouched conns; 619489063 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1321.076ns/-619489.064ns; real time: 6 secs 
-Level 4, iteration 1
-105(0.08%) conflicts; 0(0.00%) untouched conn; 668153359 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1324.057ns/-668153.359ns; real time: 7 secs 
-
-Info: Initial congestion level at 75% usage is 0
-Info: Initial congestion area  at 75% usage is 0 (0.00%)
-
-Start NBR section for normal routing at 10:52:29 04/14/25
-Level 4, iteration 1
-72(0.06%) conflicts; 0(0.00%) untouched conn; 637073525 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1040.768ns/-637073.525ns; real time: 7 secs 
-Level 4, iteration 2
-38(0.03%) conflicts; 0(0.00%) untouched conn; 637424924 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1041.927ns/-637424.924ns; real time: 7 secs 
-Level 4, iteration 3
-30(0.02%) conflicts; 0(0.00%) untouched conn; 622384529 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1043.086ns/-622384.529ns; real time: 7 secs 
-Level 4, iteration 4
-22(0.02%) conflicts; 0(0.00%) untouched conn; 622384529 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1043.086ns/-622384.529ns; real time: 7 secs 
-Level 4, iteration 5
-17(0.01%) conflicts; 0(0.00%) untouched conn; 609903864 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1044.245ns/-609903.864ns; real time: 8 secs 
-Level 4, iteration 6
-15(0.01%) conflicts; 0(0.00%) untouched conn; 609903864 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1044.245ns/-609903.864ns; real time: 8 secs 
-Level 4, iteration 7
-10(0.01%) conflicts; 0(0.00%) untouched conn; 609648154 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1044.245ns/-609648.155ns; real time: 8 secs 
-Level 4, iteration 8
-7(0.01%) conflicts; 0(0.00%) untouched conn; 609648154 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1044.245ns/-609648.155ns; real time: 8 secs 
-Level 4, iteration 9
-6(0.00%) conflicts; 0(0.00%) untouched conn; 623384506 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1095.571ns/-623384.507ns; real time: 8 secs 
-Level 4, iteration 10
-5(0.00%) conflicts; 0(0.00%) untouched conn; 623384506 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1095.571ns/-623384.507ns; real time: 8 secs 
-Level 4, iteration 11
-4(0.00%) conflicts; 0(0.00%) untouched conn; 631186576 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1094.412ns/-631186.576ns; real time: 8 secs 
-Level 4, iteration 12
-4(0.00%) conflicts; 0(0.00%) untouched conn; 631186576 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1094.412ns/-631186.576ns; real time: 8 secs 
-Level 4, iteration 13
-2(0.00%) conflicts; 0(0.00%) untouched conn; 631113949 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1093.253ns/-631113.949ns; real time: 8 secs 
-Level 4, iteration 14
-1(0.00%) conflict; 0(0.00%) untouched conn; 631113949 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1093.253ns/-631113.949ns; real time: 8 secs 
-Level 4, iteration 15
-1(0.00%) conflict; 0(0.00%) untouched conn; 624362586 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1093.253ns/-624362.586ns; real time: 8 secs 
-Level 4, iteration 16
-1(0.00%) conflict; 0(0.00%) untouched conn; 624362586 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1093.253ns/-624362.586ns; real time: 8 secs 
-Level 4, iteration 17
-1(0.00%) conflict; 0(0.00%) untouched conn; 624362586 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1093.253ns/-624362.586ns; real time: 9 secs 
-Level 4, iteration 18
-1(0.00%) conflict; 0(0.00%) untouched conn; 624362586 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1093.253ns/-624362.586ns; real time: 9 secs 
-Level 4, iteration 19
-1(0.00%) conflict; 0(0.00%) untouched conn; 624362586 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1093.253ns/-624362.586ns; real time: 9 secs 
-Level 4, iteration 20
-1(0.00%) conflict; 0(0.00%) untouched conn; 624362586 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1093.253ns/-624362.586ns; real time: 9 secs 
-Level 4, iteration 21
-1(0.00%) conflict; 0(0.00%) untouched conn; 624362266 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1093.253ns/-624362.266ns; real time: 9 secs 
-Level 4, iteration 22
-0(0.00%) conflict; 0(0.00%) untouched conn; 624362266 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1093.253ns/-624362.266ns; real time: 9 secs 
-
-Start NBR section for performance tuning (iteration 1) at 10:52:31 04/14/25
-Level 4, iteration 1
-1(0.00%) conflict; 0(0.00%) untouched conn; 612870312 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1041.927ns/-612870.312ns; real time: 9 secs 
-Level 4, iteration 2
-0(0.00%) conflict; 0(0.00%) untouched conn; 624363268 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1093.253ns/-624363.268ns; real time: 9 secs 
-Level 4, iteration 3
-0(0.00%) conflict; 0(0.00%) untouched conn; 624363268 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1093.253ns/-624363.268ns; real time: 9 secs 
-
-Start NBR section for re-routing at 10:52:31 04/14/25
-Level 4, iteration 1
-0(0.00%) conflict; 0(0.00%) untouched conn; 624323007 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1093.253ns/-624323.007ns; real time: 9 secs 
-
-Start NBR section for post-routing at 10:52:31 04/14/25
-
-End NBR router with 0 unrouted connection
-
-NBR Summary
------------
-  Number of unrouted connections : 0 (0.00%)
-  Number of connections with timing violations : 1935 (52.83%)
-  Estimated worst slack&lt;setup&gt; : -1093.253ns
-  Timing score&lt;setup&gt; : 2147483647
------------
-Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
-
-
-
-WARNING - par: The following clock signals will be routed by using generic routing resource and may suffer from excessive delay and/or skew.
-   Signal=i2c_slave_top/addr_i_7__N_594 loads=2 clock_loads=1
-   Signal=i2c_slave_top/addr_i_7__N_590 loads=2 clock_loads=1
-   Signal=i2c_slave_top/addr_i_7__N_591 loads=2 clock_loads=1
-   Signal=i2c_slave_top/addr_i_7__N_592 loads=2 clock_loads=1
-   Signal=i2c_slave_top/addr_i_7__N_593 loads=2 clock_loads=1
-   Signal=i2c_   ....   _loads=1
-   Signal=i2c_slave_top/i2cslave_controller_top/i2cslave_controller_u1/sda_reg loads=12 clock_loads=2
-   Signal=reset_generator/clk_d2 loads=4 clock_loads=3
-
-Total CPU time 10 secs 
-Total REAL time: 11 secs 
-Completely routed.
-End of route.  3663 routed (100.00%); 0 unrouted.
-
-Hold time timing score: 236, hold timing errors: 401
-
-Timing score: 2147483647 
-
-Dumping design to file TA_Driver_impl1.dir/5_1.ncd.
-
-
-All signals are completely routed.
-
-
-PAR_SUMMARY::Run status = Completed
-PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Worst  slack&lt;setup/&lt;ns&gt;&gt; = -1093.254
-PAR_SUMMARY::Timing score&lt;setup/&lt;ns&gt;&gt; = 2147483.647
-PAR_SUMMARY::Worst  slack&lt;hold /&lt;ns&gt;&gt; = -2.087
-PAR_SUMMARY::Timing score&lt;hold /&lt;ns&gt;&gt; = 236.540
-PAR_SUMMARY::Number of errors = 0
-
-Total CPU  time to completion: 10 secs 
-Total REAL time to completion: 11 secs 
-
-par done!
-
-Note: user must run &apos;Trace&apos; for timing closure signoff.
-
-Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
-Copyright (c) 1995 AT&amp;T Corp.   All rights reserved.
-Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
-Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-
-
-
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-</PRE></FONT>
-</BODY>
-</HTML>
