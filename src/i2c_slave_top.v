@@ -31,6 +31,7 @@ module i2c_slave_top(
     output [23:0] pulse_width,
     output [23:0] period,
     output [15:0] drive_current,
+    output         drive_current_update,
     output [15:0] drive_current_limit,
     output [15:0] pwm_mon_current_limit,
     output [15:0] cw_mon_current_limit,
@@ -82,6 +83,7 @@ registers registers(
 	.pulse_width 			(pulse_width),
 	.period 				(period),
 	.drive_current      	(drive_current),
+	.drive_current_update  	(drive_current_update),
 	.drive_current_limit 	(drive_current_limit),
 	
 	.pwm_mon_current_limit 	(pwm_mon_current_limit),

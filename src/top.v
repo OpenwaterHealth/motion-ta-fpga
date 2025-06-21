@@ -102,6 +102,7 @@ wire [15:0] pwm_mon_current_limit;
 wire [15:0] cw_mon_current_limit;
 
 wire pwm_cw_control_select;
+wire drive_current_update;
 wire pwm_cw_mode_select;
 wire auto_run;
 wire mon_limit_update;
@@ -109,8 +110,9 @@ wire sw_trigger;
 wire test_mode;
 wire pulse_active;
 wire period_active;
-wire trigger_ext;
+wire trigger_ext,all_trigger;
 wire data_valid;
+wire laser_on;
 ///////////////// reg 20 //////////////////////
 assign pwm_cw_mode_select   = static_control[0];
 assign cw_active_n          = !static_control[1];
@@ -119,8 +121,7 @@ assign laser_disable        = static_control[3];
 assign test_mode            = static_control[7];
  
 ///////////////// reg 22 //////////////////////
-assign drive_current_update = dynamic_control[0];
-assign mon_limit_update     = dynamic_control[1];
+assign mon_limit_update     = dynamic_control[0];
 
 assign over_current_shutdown_n  = !(over_current_limit);
 assign TA_laser_disable = !(over_current_limit);
@@ -128,9 +129,11 @@ assign TA_laser_disable = !(over_current_limit);
 //assign TA_spare2              = pulse_active;
 //assign TA_spare1              = period_active;
 assign TA_spare1              = sck;
-assign TA_spare2              = mosi;
-assign TA_spare3              = ss;
-assign TA_spare4              = trigger_ext;
+//assign TA_spare2              = mosi;
+assign TA_spare2              = TA_EE_shutdown;
+//assign TA_spare3              = ss;
+assign TA_spare3              = trigger;
+assign TA_spare4              = TA_OPT_shutdown;
 //assign TA_spare4              = ldac_n;
 assign TA_gpio1               = 0;
 assign TA_gpio2               = 0;
@@ -141,7 +144,10 @@ assign OPT_gpio2              = 0;
 assign OPT_gpio3              = 0;
 assign OPT_gpio4              = 0;
 
-assign status = {system_reset_n,TA_pos_pwr_good,TA_neg_pwr_good,TA_EE_shutdown,TA_OPT_shutdown,cw_compared,pwm_compared,over_current_limit};
+assign laser_disable_led_n = !laser_on;
+
+//assign status = {system_reset_n,TA_pos_pwr_good,TA_neg_pwr_good,TA_EE_shutdown,TA_OPT_shutdown,cw_compared,pwm_compared,over_current_limit,laser_on};
+assign status = {5'h0,TA_EE_shutdown,TA_OPT_shutdown,laser_on};
 assign temp_scl              = 0;
 assign temp_sda              = 0;
 assign mcu_gpio              = 0;
@@ -176,6 +182,8 @@ i2c_slave_top i2c_slave_top (
     .pulse_width 			(pulse_width),
     .period     			(period),
     .drive_current         (drive_current),
+	.drive_current_update  (drive_current_update),
+
     .drive_current_limit   (drive_current_limit),
     .pwm_mon_current_limit (pwm_mon_current_limit),
     .cw_mon_current_limit  (cw_mon_current_limit),
@@ -191,7 +199,9 @@ driver_control driver_control(
     .test_mode 			            (test_mode),
     .pwm_cw_mode_select 			(pwm_cw_mode_select),
 
-    .trigger            			(0),
+    .trigger            			(trigger),
+    .TA_EE_shutdown            	    (TA_EE_shutdown),
+    .TA_OPT_shutdown            	(TA_OPT_shutdown),
     .pulse_width        			(pulse_width),
     .period             			(period),
 	
@@ -206,9 +216,10 @@ driver_control driver_control(
 	
     .pulse_active       			(pulse_active),
     .period_active      			(period_active),
+    .all_trigger      			    (all_trigger),
     .trigger_ext      			    (trigger_ext),
-    .force_trigger      		    (force_trigger)
-
+    .force_trigger      		    (force_trigger),
+    .laser_on      		            (laser_on)
 
 	);
 	

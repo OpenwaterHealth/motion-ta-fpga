@@ -7,6 +7,8 @@ module driver_control(
     input         test_mode,
     input         pwm_cw_mode_select,
     input         trigger,
+    input         TA_EE_shutdown,
+    input         TA_OPT_shutdown,
 
     input [23:0] pulse_width,
     input [23:0] period,
@@ -23,8 +25,10 @@ module driver_control(
     output reg   pulse_active,
     output reg   period_active,
     output reg   trigger_ext,
-    output reg   force_trigger
-	 
+    output reg   all_trigger,
+    output reg   force_trigger,
+    output reg   laser_on
+
 	);
 	
 localparam IDLE            = 0;
@@ -74,8 +78,11 @@ reg load_dac_d,reload_dac_d;
 reg load_dac_register;
 reg force_trigger,force_trigger_d,force_trigger_ext;
 reg mosi_d1;
+reg [7:0] ready_count;
+reg drive_current_ready;
 
 wire pulse_clk;
+wire shutdown;
 
 //assign ss = ss_temp;
 //assign sck = !sck_temp;
@@ -84,8 +91,10 @@ wire pulse_clk;
 assign ldac_n = 0;
 
 assign spi_ready = data_ready;
+assign shutdown = TA_EE_shutdown | TA_OPT_shutdown;
 
-assign pulse_clk = clk_count[3];
+//assign pulse_clk = clk_count[3];
+assign pulse_clk = clk_count[2];
 
 always @(posedge clk or negedge rstn) begin
       if (!rstn) begin
@@ -141,7 +150,8 @@ always @(posedge clk or negedge rstn) begin
            trigger_ext <= 0;
            trigger_count <= 0;
       end else begin
-                   all_trigger <= (trigger | force_trigger_ext);
+                  // all_trigger <= ((trigger | force_trigger_ext));
+                   all_trigger <= ((trigger | force_trigger_ext) & (!shutdown));
                    all_trigger_d <= all_trigger;
                    if (!all_trigger_d & all_trigger) trigger_ext <= 1;
                    if (trigger_ext) begin
@@ -174,7 +184,6 @@ always @(negedge pulse_clk or negedge rstn) begin
                                end
               PULSE_COUNT_ST : begin  //6
                                    if (pulse_count > pulse_width-2) begin
-                                //   if (pulse_count > pulse_width) begin
                                        ldac_temp <= 0;
                                        pulse_active <= 0;
                                        pulse_state <= DONE;
@@ -298,7 +307,7 @@ always @(posedge clk or negedge rstn) begin
     if (!rstn) begin
              load_dac_register <= 0;
              drive_current_reg <= 16'h3600;
-             drive_current_limit_reg <= 16'h5fff;
+             drive_current_limit_reg <= 16'h3f00;
     end else begin
                  if (drive_current_update) begin
                      drive_current_reg <= drive_current;
@@ -314,22 +323,26 @@ always @(posedge clk or negedge rstn) begin
         index <= 0;
         data <= 0;
         data_valid <= 0;
+        laser_on <= 0;
         load_dac_d <= 0;
         ldac_temp_d <= 1;
         reload_dac_d <= 0;
     end else begin
 			       ldac_temp_d <= ldac_temp;
 				   if (data_valid_reset) data_valid <= 0;
-			       if ((load_dac_register) | (!ldac_temp_d & ldac_temp)) begin
+			    //   if ((load_dac_register) | (!ldac_temp_d & ldac_temp)) begin
+			       if (!ldac_temp_d & ldac_temp) begin
 					   case (index)
 							 0 : begin
 										data <= {4'h3,drive_current_reg,4'h0};
 										data_valid <= 1;
+										laser_on <= 1;
 										index <= 1;
 								 end
 							 1 : begin
 										data <= {4'h3,16'h0,4'h0};
 										data_valid <= 1;
+										laser_on <= 0;
 										index <= 0;
 								 end
 					   endcase

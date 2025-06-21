@@ -19,6 +19,7 @@ module registers(
     output reg [23:0] pulse_width,
     output reg [23:0] period,
     output reg [15:0] drive_current,
+	output reg         drive_current_update,
     output reg [15:0] drive_current_limit,
     output reg [15:0] pwm_mon_current_limit,
     output reg [15:0] cw_mon_current_limit,
@@ -48,7 +49,7 @@ wire [3:0]		div_next;
 reg	 [11:0]	stretch_cnt; 
 wire			stretch_wire;
 reg				skip_cnt;
-reg [3:0]      count;
+reg [3:0]      count,update_count;
 reg             data_vld_dly;
 
 //Parameters
@@ -70,12 +71,14 @@ assign stretch_on = stretch_wire;
 always @ (posedge clk or posedge rst) begin
 	if (rst) begin
 	    count <= 0;
-		pulse_width <= 24'h000099;
-		period <= 24'h003e00;
+	    update_count <= 0;
+		pulse_width <= 24'h00139;
+		period <= 24'h006e00;
 		drive_current <= 16'h3600;  // 14-bit
 		drive_current_limit <= 16'h3f00;
 		pwm_mon_current_limit <= 16'h00b0;
 		cw_mon_current_limit <= 16'h00a0;
+		drive_current_update <=0;
 		static_control <=0;
 		dynamic_control <=0;
 	end else begin
@@ -84,6 +87,12 @@ always @ (posedge clk or posedge rst) begin
 					   count <= 0;
 					   dynamic_control <= 0;
 				   end else count <= count + 1;
+			   end
+		       if (drive_current_update > 0) begin
+				   if (update_count > 1) begin
+					   update_count <= 0;
+					   drive_current_update <= 0;
+				   end else update_count <= update_count + 1;
 			   end
 			   
 			   if (wr_en_i) begin
@@ -95,7 +104,10 @@ always @ (posedge clk or posedge rst) begin
 					     8'h4 : period[15:8] 		         <= i2c_to_data;
 					     8'h5 : period[23:16] 		         <= i2c_to_data;
 						 8'h6 : drive_current[7:0]          <= i2c_to_data;
-						 8'h7 : drive_current[15:8]         <= i2c_to_data;
+						 8'h7 : begin
+									drive_current[15:8]     <= i2c_to_data;
+									drive_current_update     <= 1;
+								end
 						 8'h8 : drive_current_limit[7:0]    <= i2c_to_data;
 						 8'h9 : drive_current_limit[15:8]   <= i2c_to_data;
 					     8'hA : pwm_mon_current_limit[7:0]  <= i2c_to_data;
@@ -139,9 +151,9 @@ always @ (posedge clk or posedge rst) begin
 					  8'hD : data_out <= cw_mon_current_limit[15:8];
 				     8'h10 : data_out <= adc_voltage_data[7:0];
 					 8'h11 : data_out <= adc_voltage_data[15:8];
-					 8'h12 : data_out <= status;
 					 8'h20 : data_out <= static_control[7:0];
 					 8'h21 : data_out <= static_control[15:8];
+					 8'h24 : data_out <= status;
 					  default : data_out <= 0;
 				endcase
 		end
